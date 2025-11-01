@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.info-section {
+    padding: 30px;
+    background: #f8f9fa;
+    border-bottom: 3px solid #667eea;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.info-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+    color: #667eea;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.info-card p {
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.info-card strong {
+    display: block;
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.matrix-container {
+    padding: 30px;
+    overflow-x: auto;
+}
+
+.raci-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.raci-table thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.raci-table th {
+    padding: 15px 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.95em;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.raci-table th:first-child {
+    text-align: left;
+    padding-left: 20px;
+    min-width: 300px;
+}
+
+.raci-table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+    transition: background 0.3s ease;
+}
+
+.raci-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.raci-table td {
+    padding: 12px 10px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.raci-table td:first-child {
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+.raci-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85em;
+    min-width: 35px;
+}
+
+.raci-r {
+    background: #4CAF50;
+    color: white;
+}
+
+.raci-a {
+    background: #FF9800;
+    color: white;
+}
+
+.raci-c {
+    background: #2196F3;
+    color: white;
+}
+
+.raci-i {
+    background: #9E9E9E;
+    color: white;
+}
+
+.phase-header {
+    background: #e3f2fd !important;
+    font-weight: bold;
+    color: #1976d2 !important;
+    font-size: 1.1em !important;
+}
+
+.phase-header td {
+    padding: 15px 20px !important;
+    text-align: left !important;
+}
+
+.legend {
+    padding: 30px;
+    background: #f8f9fa;
+    border-top: 3px solid #667eea;
+}
+
+.legend h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.legend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.legend-badge {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    flex-shrink: 0;
+}
+
+.legend-text strong {
+    display: block;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.legend-text span {
+    color: #666;
+    font-size: 0.9em;
+}
+
+@media (max-width: 1200px) {
+    .matrix-container {
+        padding: 15px;
+    }
+
+    .raci-table {
+        font-size: 0.85em;
+    }
+
+    .raci-table th,
+    .raci-table td {
+        padding: 8px 5px;
+    }
+}

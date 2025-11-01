@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz RACI - StockMaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Matriz RACI</h1>
+            <p>Roles y Responsabilidades - Proyecto StockMaster</p>
+        </div>
+        
+        <div class="info-section">
+            <h2 style="color: #333; margin-bottom: 15px;">¿Qué es la Matriz RACI?</h2>
+            <p style="color: #666; line-height: 1.6; margin-bottom: 20px;">
+                La Matriz RACI es una herramienta de gestión de proyectos que define y clarifica roles y responsabilidades 
+                para cada tarea o actividad del proyecto. Asegura que cada miembro del equipo sepa qué se espera de él.
+            </p>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>R</h3>
+                    <strong>Responsible (Responsable)</strong>
+                    <p>Quien ejecuta la tarea. El "hacedor" del trabajo.</p>
+                </div>
+                <div class="info-card">
+                    <h3>A</h3>
+                    <strong>Accountable (Aprobador)</strong>
+                    <p>Quien tiene autoridad final y rinde cuentas. Solo UNO por tarea.</p>
+                </div>
+                <div class="info-card">
+                    <h3>C</h3>
+                    <strong>Consulted (Consultado)</strong>
+                    <p>Personas cuyas opiniones se solicitan. Comunicación bidireccional.</p>
+                </div>
+                <div class="info-card">
+                    <h3>I</h3>
+                    <strong>Informed (Informado)</strong>
+                    <p>Personas notificadas de resultados. Comunicación unidireccional.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="matrix-container">
+            <h2 style="color: #333; margin-bottom: 20px; text-align: center;">Matriz de Responsabilidades por Fase</h2>
+            
+            <table class="raci-table">
+                <thead>
+                    <tr>
+                        <th>Actividad / Tarea</th>
+                        <th>Patrocinador<br>(Laura Gómez)</th>
+                        <th>Gerente Proyecto<br>(Franco Luna)</th>
+                        <th>Líder Técnico<br>(Juan Pérez)</th>
+                        <th>Desarrolladores<br>(Ana/Luis)</th>
+                        <th>QA<br>(Sofía Ramírez)</th>
+                        <th>Usuarios Cliente<br>(Carlos/María)</th>
+                        <th>IT Cliente<br>(Roberto)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- FASE 1: INICIO -->
+                    <tr class="phase-header">
+                        <td colspan="8">1.0 FASE DE INICIO DEL PROYECTO</td>
+                    </tr>
+                    <tr>
+                        <td>1.1 Elaboración del Acta de Constitución</td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                    </tr>
+                    <tr>
+                        <td>1.2 Aprobación del Acta de Constitución</td>
+                        <td><span class="raci-badge raci-a">A</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                    </tr>
+                    <tr>
+                        <td>1.3 Kick-off meeting con stakeholders</td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-a">A</span> <span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                    </tr>
+                    
+                    <!-- FASE 2: PLANIFICACIÓN -->
+                    <tr class="phase-header">
+                        <td colspan="8">2.0 FASE DE PLANIFICACIÓN</td>
+                    </tr>
+                    <tr>
+                        <td>2.1 Levantamiento de requisitos funcionales</td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-a">A</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                    </tr>
+                    <tr>
+                        <td>2.2 Diseño de arquitectura del sistema</td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-a">A</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                    </tr>
+                    <tr>
+                        <td>2.3 Diseño de base de datos</td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-a">A</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                    </tr>
+                    <tr>
+                        <td>2.4 Diseño de interfaces (wireframes/mockups)</td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-a">A</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                    </tr>
+                    <tr>
+                        <td>2.5 Elaboración del cronograma detallado</td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-a">A</span> <span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                    </tr>
+                    
+                    <!-- FASE 3: DESARROLLO -->
+                    <tr class="phase-header">
+                        <td colspan="8">3.0 FASE DE EJECUCIÓN - DESARROLLO</td>
+                    </tr>
+                    <tr>
+                        <td>3.1 Desarrollo del módulo de productos y stock</td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-a">A</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                    </tr>
+                    <tr>
+                        <td>3.2 Desarrollo del módulo de ventas</td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-a">A</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                    </tr>
+                    <tr>
+                        <td>3.3 Desarrollo de módulo de facturación AFIP</td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-a">A</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                    </tr>
+                    <tr>
+                        <td>3.4 Desarrollo de reportes y dashboard</td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-a">A</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                    </tr>
+                    <tr>
+                        <td>3.5 Desarrollo de gestión de usuarios y permisos</td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-a">A</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                    </tr>
+                    
+                    <!-- FASE 4: PRUEBAS -->
+                    <tr class="phase-header">
+                        <td colspan="8">4.0 FASE DE PRUEBAS</td>
+                    </tr>
+                    <tr>
+                        <td>4.1 Pruebas de integración completas</td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-a">A</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                    </tr>
+                    <tr>
+                        <td>4.2 Pruebas de carga y performance</td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-a">A</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                    </tr>
+                    <tr>
+                        <td>4.3 Pruebas de seguridad</td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-a">A</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                    </tr>
+                    <tr>
+                        <td>4.4 Pruebas de aceptación del usuario (UAT)</td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-a">A</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                    </tr>
+                    
+                    <!-- FASE 5: MIGRACIÓN -->
+                    <tr class="phase-header">
+                        <td colspan="8">5.0 FASE DE MIGRACIÓN DE DATOS</td>
+                    </tr>
+                    <tr>
+                        <td>5.1 Análisis de datos existentes (Excel/sistemas previos)</td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-a">A</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                    </tr>
+                    <tr>
+                        <td>5.2 Limpieza y normalización de datos</td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-a">A</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                    </tr>
+                    <tr>
+                        <td>5.3 Ejecución de migración de datos</td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-a">A</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                    </tr>
+                    <tr>
+                        <td>5.4 Validación de integridad de datos migrados</td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-a">A</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                    </tr>
+                    
+                    <!-- FASE 6: CAPACITACIÓN -->
+                    <tr class="phase-header">
+                        <td colspan="8">6.0 FASE DE CAPACITACIÓN</td>
+                    </tr>
+                    <tr>
+                        <td>6.1 Elaboración de manual de usuario</td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-a">A</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                    </tr>
+                    <tr>
+                        <td>6.2 Creación de videos tutoriales</td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-a">A</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                    </tr>
+                    <tr>
+                        <td>6.3 Capacitación a usuarios de ventas (cajeros)</td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-a">A</span> <span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-c">C</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-r">R</span></td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                    </tr>
+                    <tr>
+                        <td>6.4 Capacitación a usuarios de inventario</td>
+                        <td><span class="raci-badge raci-i">I</span></td>
+                        <td><span class="raci-badge raci-a">A</span> <span class="raci-badge raci-
